@@ -1,0 +1,20 @@
+{
+  "name": "gp-01-air-quality-intelligence",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GP-01 Air Quality Monitoring and Source Attribution Platform",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:web": "npm --prefix apps/web run dev",
+    "dev:api": "npm --prefix apps/api-node run dev",
+    "build:web": "npm --prefix apps/web run build",
+    "build:api": "npm --prefix apps/api-node run build",
+    "build:shared": "npm --prefix packages/shared run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

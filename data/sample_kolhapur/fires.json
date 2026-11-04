@@ -1,0 +1,52 @@
+[
+  {
+    "id": "firm-kop-001",
+    "latitude": 16.612,
+    "longitude": 74.345,
+    "acqDatetime": "2026-11-04T07:30:00Z",
+    "frp": 28.4,
+    "confidence": "high",
+    "satellite": "VIIRS_SNPP",
+    "daynight": "D"
+  },
+  {
+    "id": "firm-kop-002",
+    "latitude": 16.782,
+    "longitude": 74.385,
+    "acqDatetime": "2026-11-04T07:32:00Z",
+    "frp": 19.8,
+    "confidence": "nominal",
+    "satellite": "VIIRS_SNPP",
+    "daynight": "D"
+  },
+  {
+    "id": "firm-mh-003",
+    "latitude": 16.92,
+    "longitude": 74.45,
+    "acqDatetime": "2026-11-04T02:15:00Z",
+    "frp": 34.2,
+    "confidence": "high",
+    "satellite": "MODIS_Aqua",
+    "daynight": "N"
+  },
+  {
+    "id": "firm-mh-004",
+    "latitude": 17.15,
+    "longitude": 74.21,
+    "acqDatetime": "2026-11-03T18:40:00Z",
+    "frp": 14.5,
+    "confidence": "nominal",
+    "satellite": "VIIRS_SNPP",
+    "daynight": "N"
+  },
+  {
+    "id": "firm-pun-005",
+    "latitude": 18.32,
+    "longitude": 74.05,
+    "acqDatetime": "2026-11-04T08:10:00Z",
+    "frp": 22.1,
+    "confidence": "nominal",
+    "satellite": "VIIRS_SNPP",
+    "daynight": "D"
+  }
+]

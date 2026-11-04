@@ -1,0 +1,146 @@
+[
+  {
+    "id": "kolhapur-shivaji-uni",
+    "name": "Shivaji University, Vidyanagar",
+    "code": "MH_KOP_001",
+    "city": "Kolhapur",
+    "state": "Maharashtra",
+    "country": "India",
+    "location": {
+      "latitude": 16.6775,
+      "longitude": 74.2541
+    },
+    "elevation": 575,
+    "operator": "MPCB / CPCB CAAQMS",
+    "stationType": "Continuous Ambient Air Quality Monitoring Station (CAAQMS)",
+    "isActive": true
+  },
+  {
+    "id": "kolhapur-kasaba-bawada",
+    "name": "Kasaba Bawada Urban Station",
+    "code": "MH_KOP_002",
+    "city": "Kolhapur",
+    "state": "Maharashtra",
+    "country": "India",
+    "location": {
+      "latitude": 16.721,
+      "longitude": 74.2415
+    },
+    "elevation": 560,
+    "operator": "Kolhapur Municipal Corporation / MPCB",
+    "stationType": "Urban Background Station",
+    "isActive": true
+  },
+  {
+    "id": "kolhapur-shiroli-midc",
+    "name": "Shiroli MIDC Industrial Area",
+    "code": "MH_KOP_003",
+    "city": "Kolhapur",
+    "state": "Maharashtra",
+    "country": "India",
+    "location": {
+      "latitude": 16.7452,
+      "longitude": 74.2798
+    },
+    "elevation": 568,
+    "operator": "MPCB Industrial Monitoring",
+    "stationType": "Industrial Monitoring Station",
+    "isActive": true
+  },
+  {
+    "id": "kolhapur-gokul-shirgaon",
+    "name": "Gokul Shirgaon Industrial Zone",
+    "code": "MH_KOP_004",
+    "city": "Kolhapur",
+    "state": "Maharashtra",
+    "country": "India",
+    "location": {
+      "latitude": 16.6341,
+      "longitude": 74.2712
+    },
+    "elevation": 580,
+    "operator": "MPCB",
+    "stationType": "Industrial Monitoring Station",
+    "isActive": true
+  },
+  {
+    "id": "kolhapur-nh48-transit",
+    "name": "NH-48 Shiroli Bypass Transit Corridor",
+    "code": "MH_KOP_005",
+    "city": "Kolhapur",
+    "state": "Maharashtra",
+    "country": "India",
+    "location": {
+      "latitude": 16.711,
+      "longitude": 74.262
+    },
+    "elevation": 565,
+    "operator": "Highway Traffic & Air Quality Cell",
+    "stationType": "Roadside / Traffic Corridor Station",
+    "isActive": true
+  },
+  {
+    "id": "pune-karve-rd",
+    "name": "Karve Road, Pune",
+    "code": "MH_PUN_001",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "country": "India",
+    "location": {
+      "latitude": 18.502,
+      "longitude": 73.818
+    },
+    "elevation": 560,
+    "operator": "IITM / SAFAR / MPCB",
+    "stationType": "Continuous Ambient Air Quality Monitoring Station",
+    "isActive": true
+  },
+  {
+    "id": "mumbai-bkc",
+    "name": "Bandra Kurla Complex (BKC)",
+    "code": "MH_BOM_001",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "country": "India",
+    "location": {
+      "latitude": 19.0657,
+      "longitude": 72.8682
+    },
+    "elevation": 14,
+    "operator": "MPCB / CPCB",
+    "stationType": "Commercial & High Traffic CAAQMS",
+    "isActive": true
+  },
+  {
+    "id": "solapur-midc",
+    "name": "Solapur MIDC Industrial Estate",
+    "code": "MH_SOL_001",
+    "city": "Solapur",
+    "state": "Maharashtra",
+    "country": "India",
+    "location": {
+      "latitude": 17.6599,
+      "longitude": 75.9064
+    },
+    "elevation": 458,
+    "operator": "MPCB",
+    "stationType": "Industrial Station",
+    "isActive": true
+  },
+  {
+    "id": "sangli-city",
+    "name": "Sangli Civil Hospital Road",
+    "code": "MH_SNG_001",
+    "city": "Sangli",
+    "state": "Maharashtra",
+    "country": "India",
+    "location": {
+      "latitude": 16.8524,
+      "longitude": 74.5815
+    },
+    "elevation": 549,
+    "operator": "MPCB",
+    "stationType": "Urban Background Station",
+    "isActive": true
+  }
+]

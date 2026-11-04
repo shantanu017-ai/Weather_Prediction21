@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  # 1. PostgreSQL with PostGIS Spatial Extension
+  postgis:
+    image: postgis/postgis:16-3.4
+    container_name: gp01-postgis
+    environment:
+      POSTGRES_DB: airquality_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgrespassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgis_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d airquality_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # 2. Python FastAPI ML Service
+  ml-service:
+    build:
+      context: ./apps/ml-service
+      dockerfile: Dockerfile
+    container_name: gp01-ml-service
+    environment:
+      - PORT=8000
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  # 3. Node.js REST API Gateway
+  api-gateway:
+    build:
+      context: .
+      dockerfile: apps/api-node/Dockerfile
+    container_name: gp01-api-node
+    environment:
+      - PORT=5000
+      - DATABASE_URL=postgresql://postgres:postgrespassword@postgis:5432/airquality_db
+      - ML_SERVICE_URL=http://ml-service:8000/ml/v1
+    ports:
+      - "5000:5000"
+    depends_on:
+      postgis:
+        condition: service_healthy
+      ml-service:
+        condition: service_started
+    restart: unless-stopped
+
+  # 4. Next.js Frontend Dashboard
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    container_name: gp01-web
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:5000/api/v1
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api-gateway
+    restart: unless-stopped
+
+volumes:
+  postgis_data:
